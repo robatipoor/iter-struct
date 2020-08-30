@@ -1,0 +1,18 @@
+[package]
+name = "iter-struct"
+version = "0.1.0"
+authors = ["robatipoor <mahdi.robatipoor@gmail.com>"]
+edition = "2018"
+
+
+[lib]
+name = "iter_struct"
+proc-macro=true
+
+[[test]]
+name = "tests"
+path = "tests/main.rs"
+
+[dependencies]
+syn = {version = "*" ,features = ["extra-traits"]}
+quote = "*"
